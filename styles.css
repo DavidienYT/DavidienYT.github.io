@@ -1,4 +1,6 @@
  body {
+  min-height: 100%
+  height: auto !important
   background-color: rgb( 15, 15, 15)
   }
 h1 {
