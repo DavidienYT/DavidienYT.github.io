@@ -3,13 +3,14 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <script>
-      function copy( elm_id ) {
-      var text = document.getElementById( elm_id ).innerHTML;
-      navigator.clipboard.writeText( text );}
+      function copy_to_clipboard( elm_id ) {
+          var text = document.getElementById( elm_id ).innerHTML;
+          navigator.clipboard.writeText( text );
+        }
     </script>
   </head>
   <body>
     <h1>Contact</h1>
-    <h2>Want to review or just have ideas? Contact us at <a onclick="copy_to_clipboard('Email')" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBlQfdsGCqfwppWhfPGKrCmhjpPWfDlrCrQjwvfGwRTJzcrtWSjJbcMksSdZfgfrzKWkDq">feedback@justrand.com"</a>.</h2>
+    <h2>Want to review or just have ideas? Contact me at <h2 id="Email">feedback@justrand.com</h2>.</h2><a style="text-align: center;"onclick="copy_to_clipboard('Email')">Copy!</a>
   </body>	
 </html>
