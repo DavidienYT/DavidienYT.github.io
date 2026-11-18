@@ -2,6 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <script>
+      function copy( elm_id ) {
+      var text = document.getElementById( elm_id ).innerHTML;
+      navigator.clipboard.writeText( text );}
+    </script>
   </head>
   <body>
     <h1>Contact</h1>
